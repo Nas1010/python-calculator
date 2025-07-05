@@ -77,8 +77,6 @@ width = 500
 height = 700
 root.geometry(f"{width}x{height}")
 
-root.resizable(False, False)
-
 root.bind("<Return>", lambda event: handle_button_click("="))
 root.bind("<BackSpace>", lambda event: handle_button_click("C"))
 
