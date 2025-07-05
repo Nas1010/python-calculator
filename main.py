@@ -53,3 +53,7 @@ def handle_button_click(clicked_button_text):
          ("1", 4, 0), ("2", 4, 1), ("3", 4, 2), ("+", 4, 3),
          ("0", 5, 0), (".", 5, 1), ("=", 5, 2)
     ]
+
+    style = ttk.Style()
+    style.theme_use('default')
+    style.configure("Tbutton", font=("Helvetica", 16), width=10, height=4)
