@@ -79,4 +79,7 @@ def handle_button_click(clicked_button_text):
 
     root.resizable(False, False)
 
-    
+    root.bind("<Return>", lambda event: handle_button_click("="))
+    root.bind("BackSpace>", lambda event: handle_button_click("C"))
+
+    root.mainloop()
