@@ -66,3 +66,17 @@ def handle_button_click(clicked_button_text):
     style="TButton")
          button.grid(row=row, column=col, columnspan=colspan, 
     sticky="nsew", ipadx=10, ipady=4, padx=5, pady=5)
+         
+    for i in range(6):
+         root.grid_rowconfigure(i, weight=1)
+
+    for i in range(4):
+         root.grid_columnconfigure(i, weight=1)
+
+    width = 500
+    height = 700
+    root.geometry(f"{width}x{height}")
+
+    root.resizable(False, False)
+
+    
