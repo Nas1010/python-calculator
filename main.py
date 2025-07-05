@@ -33,3 +33,15 @@ def handle_button_click(clicked_button_text):
               result_var.set(-current_number)
          except ValueError:
               result_var.set("Error")
+    else:
+         result_var.set(current_text + clicked_button_text)
+
+
+    root = tk.Tk()
+    root.title("Calculator")
+
+    result_var = tk.StringVar()
+    result_entry = ttk.Entry(root, textvariable=result_var,
+    font=("Helvetica", 24), justify='right')
+    result_entry.grid(row=0, column=0, columnspan=4,
+    sticky="nsew")
