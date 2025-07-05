@@ -45,3 +45,11 @@ def handle_button_click(clicked_button_text):
     font=("Helvetica", 24), justify='right')
     result_entry.grid(row=0, column=0, columnspan=4,
     sticky="nsew")
+
+    buttons = [
+         ("C", 1, 0), ("±", 1, 1), ("%", 1, 2), ("÷", 1, 3),
+         ("7", 2, 0), ("8", 2, 1), ("9", 2, 2), ("x", 2, 3),
+         ("4", 3, 0), ("5", 3, 1), ("6", 3, 2), ("-", 3, 3),
+         ("1", 4, 0), ("2", 4, 1), ("3", 4, 2), ("+", 4, 3),
+         ("0", 5, 0), (".", 5, 1), ("=", 5, 2)
+    ]
