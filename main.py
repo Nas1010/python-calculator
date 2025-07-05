@@ -57,3 +57,12 @@ def handle_button_click(clicked_button_text):
     style = ttk.Style()
     style.theme_use('default')
     style.configure("Tbutton", font=("Helvetica", 16), width=10, height=4)
+
+    for button_info in buttons:
+         button_text, row, col = button_info[:3]
+         colspan = button_info[3] if len(button_info) > 3 else 1
+         button = ttk.Button(root, text=button_text,
+    command=lambda text=button_text: handle_button_click(text),
+    style="TButton")
+         button.grid(row=row, column=col, columnspan=colspan, 
+    sticky="nsew", ipadx=10, ipady=4, padx=5, pady=5)
